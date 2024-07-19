@@ -45,11 +45,10 @@ class Program
         var sortedNumbers = shuffledNumbers.OrderBy(x => numberToSwedish[x]).ToList();
 
         Console.WriteLine("Numbers sorted in alphabetical order based on the Swedish names of the numbers:\n");
-        int index = 1;
+
         foreach (var number in sortedNumbers)
         {
             Console.WriteLine($"{number.ToString().PadLeft(2, '0')} {numberToSwedish[number]}");
-            index++;
         }
 
     }
