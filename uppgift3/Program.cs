@@ -48,7 +48,7 @@ class Program
         int index = 1;
         foreach (var number in sortedNumbers)
         {
-            Console.WriteLine($"{index.ToString().PadLeft(2, '0')}, {numberToSwedish[number]}");
+            Console.WriteLine($"{number.ToString().PadLeft(2, '0')} {numberToSwedish[number]}");
             index++;
         }
 
